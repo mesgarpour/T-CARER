@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://drive.google.com/file/d/0B66ZhjpqQA5PbWk1d2RLY3A4X3M/view?usp=sharing">
+  <img src="https://github.com/mesgarpour/T-CARER/blob/master/Documents/Logo/logo_tcarer.png">
 </div>
 <br><br>
 
