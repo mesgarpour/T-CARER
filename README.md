@@ -40,7 +40,7 @@ The [WDNN](https://arxiv.org/abs/1606.07792) method produced predictions with hi
 
 # Related Publications
 +  Mesgarpour, M., Chaussalet, T. & Chahed, S. (2017) Temporal-Comorbidity Adjusted Risk of Emergency Readmission. (to be added!)
-+  Mesgarpour, M. (2017) Using Machine Learning Techniques in Predictive Risk Modelling in Healthcare. (to be added!)
++  Mesgarpour, M. (2017) PhD Thesis - Using Machine Learning Techniques in Predictive Risk Modelling in Healthcare. (to be added!)
 
 
 
