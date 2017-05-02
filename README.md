@@ -39,11 +39,13 @@ The [WDNN](https://arxiv.org/abs/1606.07792) method produced predictions with hi
 
 
 # Getting Started
-Firstly, there are two main Notebooks that can be used to conduct your modelling:
+Firstly, there are two main IPython Notebooks that can be used to conduct your modelling:
 - Basic modelling algorithms including Random Forest and Logistic Regression can be applied using this Notebook:
   + [TCARER_Basic.ipynb](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_Basic.ipynb)
 - The WDNN can be applied using the following Notebook (the input features can consturcted using the above Notebook):
   + [TCARER_TensorFlow.ipynb](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_TensorFlow.ipynb)
+  
+The Notebooks include detailed guides about the T-CARER configurations, and it is highly recommended to adjust them based on your inputted features and hardware settings.
   
  Moreover, [a sample T-CARER output folder](https://github.com/mesgarpour/T-CARER/tree/master/Samples) is provided for demonstration purpose. 
 
