@@ -42,7 +42,9 @@ class CONSTANTS:
     var_hesIp = dict()
 
     @staticmethod
-    def set(config_path, app_name, output_path=None):
+    def set(config_path=os.path.abspath("Inputs/CONFIGURATIONS_1.ini"),
+            app_name="T-CARER",
+            output_path=None):
         CONSTANTS.__logger = logging.getLogger(CONSTANTS.app_name)
         CONSTANTS.__logger.debug(__name__)
 

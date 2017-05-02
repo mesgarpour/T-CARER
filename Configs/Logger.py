@@ -12,7 +12,7 @@ __status__ = "Development"
 
 
 class Logger:
-    def __init__(self, path, app_name, extension="log"):
+    def __init__(self, path, app_name="T-CARER", extension="log"):
         # create logger
         logger = logging.getLogger(app_name)
         logger.setLevel(logging.DEBUG)
