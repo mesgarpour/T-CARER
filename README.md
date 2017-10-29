@@ -8,6 +8,9 @@
 |-----------------|---------------------|------------------|-------------------|
 | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) |
 
+
+<br>
+Version: 1.1 (2017.10.29)
 <br>
 Supported Python Version: 3.5
 <br>
