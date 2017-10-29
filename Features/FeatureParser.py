@@ -1,29 +1,59 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+#
+# Copyright 2017 University of Westminster. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ==============================================================================
+""" It reads and parses the variables, then it generate features.
+"""
+
+from typing import List, TypeVar, Dict
 import sys
 import pandas as pd
 import numpy as np
 import multiprocessing as mp
 from functools import partial
 from collections import Counter
-from ReadersWrites.ReadersWriters import ReadersWriters
+from ReadersWriters.ReadersWriters import ReadersWriters
 import logging
 from Features.FeatureParserThread import FeatureParserThread
 from Configs.CONSTANTS import CONSTANTS
+
+PandasDataFrame = TypeVar('DataFrame')
+NumpyNdarray = TypeVar('ndarray')
 
 __author__ = "Mohsen Mesgarpour"
 __copyright__ = "Copyright 2016, https://github.com/mesgarpour"
 __credits__ = ["Mohsen Mesgarpour"]
 __license__ = "GPL"
-__version__ = "1.x"
+__version__ = "1.1"
 __maintainer__ = "Mohsen Mesgarpour"
 __email__ = "mohsen.mesgarpour@gmail.com"
-__status__ = "Development"
+__status__ = "Release"
 
 
 class FeatureParser:
 
-    def __init__(self, variables_settings, output_path, output_table):
+    def __init__(self,
+                 variables_settings: PandasDataFrame,
+                 output_path: str,
+                 output_table: str):
+        """Initialise the objects and constants.
+        :param variables_settings:
+        :param output_path: the output path.
+        :param output_table: the output table name.
+        """
         self.__logger = logging.getLogger(CONSTANTS.app_name)
         self.__logger.debug(__name__)
         self.__variables_settings = variables_settings
@@ -32,7 +62,20 @@ class FeatureParser:
         self.__readers_writers = ReadersWriters()
         self.__FeatureParserThread = FeatureParserThread()
 
-    def generate(self, history_table, features, variables, prevalence):
+    def generate(self,
+                 history_table: str,
+                 features: PandasDataFrame,
+                 variables: PandasDataFrame,
+                 prevalence: Dict) -> PandasDataFrame:
+        """
+
+        :param history_table: the source table alias name (a.k.a. history table name) that features belong to
+            (e.g. inpatient, or outpatient).
+        :param features: the output features.
+        :param variables: the input variables.
+        :param prevalence: the prevalence dictionary of values for all the variables.
+        :return: the output features.
+        """
         variables_settings = self.__variables_settings[self.__variables_settings["Table_History_Name"] == history_table]
 
         for _, row in variables_settings.iterrows():
@@ -57,7 +100,19 @@ class FeatureParser:
                 features[row["Variable_Name"]] = features_temp
         return features
 
-    def __aggregate(self, variable, variable_type, postfixes, prevalence):
+    def __aggregate(self,
+                    variable: PandasDataFrame,
+                    variable_type: str,
+                    postfixes: str,
+                    prevalence: Dict) -> NumpyNdarray:
+        """
+
+        :param variable: the input variable.
+        :param variable_type: the type of input variable.
+        :param postfixes: name of the aggregation functions.
+        :param prevalence: the prevalence dictionary of values for all the variables.
+        :return: the aggregated variable.
+        """
         try:
             with mp.Pool() as pool:
                 features_temp = pool.map(
@@ -69,7 +124,14 @@ class FeatureParser:
         features_temp = np.asarray(features_temp)
         return features_temp
 
-    def prevalence(self, variable, variable_name):
+    def prevalence(self,
+                   variable: PandasDataFrame,
+                   variable_name: str) -> List:
+        """
+        :param variable: the input variable.
+        :param variable_name: the name of the input variable.
+        :return: the prevalence of values for all the variables.
+        """
         try:
             with mp.Pool() as pool:
                 prevalence_temp = pool.map(
@@ -82,6 +144,6 @@ class FeatureParser:
         prevalence = Counter(prevalence_temp).most_common()
         self.__readers_writers.save_text(self.__output_path, self.__output_table,
                                          [variable_name, '; '.join([str(p[0]) + ":" + str(p[1]) for p in prevalence])],
-                                         append=True, extension="txt")
+                                         append=True, ext="txt")
         prevalence = [p[0] for p in prevalence]
         return prevalence

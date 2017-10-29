@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/mesgarpour/T-CARER/blob/master/Documents/Logo/logo_tcarer.png">
+  <img src="https://drive.google.com/file/d/0B66ZhjpqQA5PbWk1d2RLY3A4X3M/view?usp=sharing">
 </div>
 <br><br>
 
@@ -10,6 +10,9 @@
 |-----------------|---------------------|------------------|-------------------|
 | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) |
 
+<br><br>
+Supported Python Version: 3.5
+Supported TensorFlow Version: 1.4
 
 
 ------
@@ -38,21 +41,9 @@ The [WDNN](https://arxiv.org/abs/1606.07792) method produced predictions with hi
 
 
 
-# Getting Started
-Firstly, there are two main IPython Notebooks that can be used to conduct your modelling:
-- Basic modelling algorithms including Random Forest and Logistic Regression can be applied using this Notebook:
-  + [TCARER_Basic.ipynb](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_Basic.ipynb)
-- The WDNN can be applied using the following Notebook (the input features can consturcted using the above Notebook):
-  + [TCARER_TensorFlow.ipynb](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_TensorFlow.ipynb)
-  
-The Notebooks include detailed guides about the T-CARER configurations, and it is highly recommended to adjust them based on your inputted features and hardware settings.
-  
- Moreover, [a sample T-CARER output folder](https://github.com/mesgarpour/T-CARER/tree/master/Samples) is provided for demonstration purpose. 
-
-
 # Related Publications
 +  Mesgarpour, M., Chaussalet, T. & Chahed, S. (2017) Temporal-Comorbidity Adjusted Risk of Emergency Readmission. (to be added!)
-+  Mesgarpour, M. (2017) PhD Thesis - Using Machine Learning Techniques in Predictive Risk Modelling in Healthcare. (to be added!)
++  Mesgarpour, M. (2017) Using Machine Learning Techniques in Predictive Risk Modelling in Healthcare. (to be added!)
 
 
 
