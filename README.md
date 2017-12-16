@@ -16,17 +16,10 @@ Supported Python Version: 3.5
 <br>
 Supported TensorFlow Version: 1.4
 
+
 ------
 # [T-CARER](https://github.com/mesgarpour/T-CARER)
 [Temporal-Comorbidity Adjusted Risk of Emergency Readmission (T-CARER)](https://github.com/mesgarpour/T-CARER) is a comorbidity risk index that incorporates temporal dimensions, operations and procedures groups, demographics, and admission details, as well as diagnoses groups. The features of the model are generated using the [Healthcare Pre-Processing Framework](https://github.com/mesgarpour/Healthcare_PreProcessing_Framework), but it is partially integrated into the [T-CARER](https://github.com/mesgarpour/T-CARER) development toolkit, in order to preserve the tool's generic structure. The [T-CARER](https://github.com/mesgarpour/T-CARER) development toolkit is a generic, user-friendly and open-source software package that can be used for development of temporal comorbidity index independent of source of healthcare data.
-
-The development toolkit consists of two main parts:
-+  [The T-CARER using basic models](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_Basic.ipynb)
-+  [The T-CARER using Deep Neural Network](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_TensorFlow.ipynb)
-
-Also, two additional sample scripts are provided to assisst in validation and visualisation of models:
-+  [Extra Plots](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_plots.ipynb)
-+  [Extra Summary Reports](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_summaryReports.ipynb)
 
 
 # Introduction
@@ -48,11 +41,25 @@ The [WDNN](https://arxiv.org/abs/1606.07792) and the [Random Forest](https://en.
 The [WDNN](https://arxiv.org/abs/1606.07792) method produced predictions with high precision, and the [Random Forest](https://en.wikipedia.org/wiki/Random_forest) method outperformed in terms of micro-average of [F1-score](https://en.wikipedia.org/wiki/F1_score). The [precisions](https://en.wikipedia.org/wiki/Precision_and_recall) were 0.582% to 0.639%, and the micro-average of [F1-score](https://en.wikipedia.org/wiki/F1_score) was 0.730% to 0.790% for the best modelling methods across different sampled time-frames.
 
 
+# Getting Started
+Firstly, there are two main IPython Notebooks that can be used to conduct your modelling:
+- Basic modelling algorithms including Random Forest and Logistic Regression can be applied using this Notebook:
+  + [TCARER_Basic.ipynb](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_Basic.ipynb)
+- The WDNN can be applied using the following Notebook (the input features can be constructed using the above Notebook):
+  + [TCARER_TensorFlow.ipynb](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_TensorFlow.ipynb)
+ 
+ Also, two additional scripts are provided to assisst you in further validation and visualisation of models:
++  [Extra Plots](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_plots.ipynb)
++  [Extra Summary Reports](https://github.com/mesgarpour/T-CARER/blob/master/TCARER_summaryReports.ipynb)
+  
+The Notebooks include detailed guides about the T-CARER configurations, and it is highly recommended to adjust them based on your inputted features and hardware settings.
+  
+ Moreover, [a sample](https://github.com/mesgarpour/T-CARER/blob/master/Samples) is provided for demonstration purpose. 
+
 
 # Related Publications
 +  Mesgarpour, M., Chaussalet, T. & Chahed, S. (2017) Temporal-Comorbidity Adjusted Risk of Emergency Readmission. (In review!)
 +  [Mesgarpour, M. (2017) Using Machine Learning Techniques in Predictive Risk Modelling in Healthcare. Ph.D. Thesis, University of Westminster, London, UK.](http://westminsterresearch.wmin.ac.uk/20306/1/Mesgarpour_Mohsen_thesis.pdf)
-
 
 
 # License
@@ -60,8 +67,7 @@ The [WDNN](https://arxiv.org/abs/1606.07792) method produced predictions with hi
 Enjoy!
 
 
-
-# Creadits
+# Credits
 Original Author: [Mohsen Mesgarpour](https://uk.linkedin.com/in/mesgarpour), [Health and Social Care Modelling Group (HSCMG)](http://www.healthcareanalytics.co.uk/), [University of Westminster](https://www.westminster.ac.uk/).
 
 Most Recent Author: [Mohsen Mesgarpour](https://uk.linkedin.com/in/mesgarpour), [Health and Social Care Modelling Group (HSCMG)](http://www.healthcareanalytics.co.uk/), [University of Westminster](https://www.westminster.ac.uk/).
