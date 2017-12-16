@@ -1,20 +1,19 @@
 <div align="center">
-  <img src="https://github.com/mesgarpour/T-CARER/blob/master/Documents/Logo/logo_tcarer.png">
+  <img src="https://drive.google.com/file/d/0B66ZhjpqQA5PbWk1d2RLY3A4X3M/view?usp=sharing">
 </div>
-<br>
+<br><br>
+
+
 
 -----------------
 | **`Linux Debian`** | **`Linux Fedora`** | **`Mac OS`** | **`Windows, except TensorFlow`** |
 |-----------------|---------------------|------------------|-------------------|
 | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) |
 
-
-<br>
-Version: 1.1 (2017.10.29)
-<br>
+<br><br>
 Supported Python Version: 3.5
-<br>
 Supported TensorFlow Version: 1.4
+
 
 ------
 # [T-CARER](https://github.com/mesgarpour/T-CARER)
@@ -43,8 +42,8 @@ The [WDNN](https://arxiv.org/abs/1606.07792) method produced predictions with hi
 
 
 # Related Publications
-+  Mesgarpour, M., Chaussalet, T. & Chahed, S. (2017) Temporal-Comorbidity Adjusted Risk of Emergency Readmission. (In review!)
-+  [Mesgarpour, M. (2017) Using Machine Learning Techniques in Predictive Risk Modelling in Healthcare. Ph.D. Thesis, University of Westminster, London, UK.](http://westminsterresearch.wmin.ac.uk/20306/1/Mesgarpour_Mohsen_thesis.pdf)
++  Mesgarpour, M., Chaussalet, T. & Chahed, S. (2017) Temporal-Comorbidity Adjusted Risk of Emergency Readmission. (to be added!)
++  Mesgarpour, M. (2017) Using Machine Learning Techniques in Predictive Risk Modelling in Healthcare. (to be added!)
 
 
 
