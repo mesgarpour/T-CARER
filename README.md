@@ -4,7 +4,7 @@
 <br>
 
 -----------------
-| **`Linux Debian`** | **`Linux Fedora`** | **`Mac OS`** | **`Windows, except TensorFlow`** |
+| **`Linux Debian`** | **`Linux Fedora`** | **`Mac OS`** | **`Windows OS`** |
 |-----------------|---------------------|------------------|-------------------|
 | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) | [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](PASSING) |
 
