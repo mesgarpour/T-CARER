@@ -21,6 +21,12 @@ Supported TensorFlow Version: 1.4
 # [T-CARER](https://github.com/mesgarpour/T-CARER)
 [Temporal-Comorbidity Adjusted Risk of Emergency Readmission (T-CARER)](https://github.com/mesgarpour/T-CARER) is a comorbidity risk index that incorporates temporal dimensions, operations and procedures groups, demographics, and admission details, as well as diagnoses groups. The features of the model are generated using the [Healthcare Pre-Processing Framework](https://github.com/mesgarpour/Healthcare_PreProcessing_Framework), but it is partially integrated into the [T-CARER](https://github.com/mesgarpour/T-CARER) development toolkit, in order to preserve the tool's generic structure. The [T-CARER](https://github.com/mesgarpour/T-CARER) development toolkit is a generic, user-friendly and open-source software package that can be used for development of temporal comorbidity index independent of source of healthcare data.
 
+<br>
+<div align="center" style="text-align: center">
+  <img width="50%" height="50%" src="https://github.com/mesgarpour/T-CARER/blob/master/Documents/UML/DNN%20Diagram.JPG">
+</div>
+<br>
+
 
 # Introduction
 Patients' [comorbidities](https://en.wikipedia.org/wiki/Comorbidity), operations and complications can be associated with reduced long-term survival probability and increased healthcare utilisation. The aim of this research [Ref !!!] was to produce an adjusted case-mix model of comorbidity risk and develop a user-friendly software tool to encourage public adaptation and incremental development.
